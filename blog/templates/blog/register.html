@@ -1,0 +1,15 @@
+<div>
+  <h2>Register</h2>
+  <form action="" method="post">
+    {% csrf_token %}
+    {% for field in form %}
+      <div>
+        <label>{{ field.label_tag }}</label>
+        <div>{{ field }}</div>
+        {{ field.errors }}
+      </div>
+    {% endfor %}
+    <br>
+    <input type="submit" value="Register" />
+  </form>
+</div>

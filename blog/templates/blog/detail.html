@@ -1,0 +1,24 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+
+  <a href="{% url 'blog:update_article' article.id %}" class="function-tag">Update Article</a>
+  <a href="{% url 'blog:delete_article' article.id %}" class="function-tag">Delete Article</a>
+
+  <div class="post">
+    <br>
+    <div class="post-heading">
+      <div class="post-title">
+        {{ article.title }}
+      </div>
+      <div class="post-date">
+        {{ article.pub_date }}
+      </div>
+    </div>
+
+    <div class="post-content">
+      {{ article.content }}
+    </div>
+
+  </div>
+
+{% endblock %}
