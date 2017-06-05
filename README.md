@@ -1,2 +1,2 @@
 # blog_site
-It's a simple blog site with Django framework.
+It's a blog site with Django framework.
